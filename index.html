@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
+		<title>QCM calculator</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>
+					<label for="total">Number of questions (1-100):</label>
+				</td>
+				<td>
+					<input
+						type="number"
+						id="total"
+						name="total"
+						min="1"
+						max="100"
+						value="20"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="answered"> Number of questions answered (1-100):</label>
+				</td>
+				<td>
+					<input
+						type="number"
+						id="answered"
+						name="answered"
+						min="1"
+						max="100"
+						value="18"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td><br /></td>
+				<td><br /></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="correct">Points for a correct answer :</label>
+				</td>
+				<td>
+					<input
+						type="number"
+						id="correct"
+						name="correct"
+						min="-100"
+						max="100"
+						step=".01"
+						value="1"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="wrong">Points for a wrong answer :</label>
+				</td>
+				<td>
+					<input
+						type="number"
+						id="wrong"
+						name="wrong"
+						min="-100"
+						max="100"
+						step=".01"
+						value="-1"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="pass">Points for a unanswered answer :</label>
+				</td>
+				<td>
+					<input
+						type="number"
+						id="pass"
+						name="pass"
+						min="-100"
+						max="100"
+						step=".01"
+						value="0"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<br />
+					<button class="run" id="run" type="button">
+						RUN
+					</button>
+				</td>
+			</tr>
+		</table>
+
+		<script src="/script.js"></script>
+	</body>
+</html>
